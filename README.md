@@ -40,13 +40,19 @@ jar is generated under `target/` and can be run with `java -jar target/transfer-
 
 #### Fetch all
 
+Returns array of account json objects
+
 `GET localhost:8000/accounts`
 
 #### Fetch One by id
 
+Returns json of a single account resource if exists, returns status 404 if it does not.
+
 `GET localhost:8000/accounts/1`
 
 #### Create
+
+Returns status code 201 on successful creation.
 
 ```
 POST localhost:8000/accounts
@@ -58,6 +64,8 @@ POST localhost:8000/accounts
 ```
 
 #### Update
+
+Returns status 200 on success.
 
 ```
 PUT localhost:8000/accounts/0
@@ -90,7 +98,7 @@ Returns json of a single transfer resource
 
 #### Create (pre-execution)
 
-Returns status 200 on success.
+Returns status 201 on success.
 
 ```
 POST localhost:8000/transfers

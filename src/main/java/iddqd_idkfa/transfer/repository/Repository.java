@@ -91,7 +91,7 @@ public class Repository {
         return true;
     }
 
-    public static void unlock(int accountId) {
+    synchronized public static void unlock(int accountId) {
         System.out.println("unlocking " + accountId + " current: " + locks.get(accountId));
         locks.put(accountId, false);
     }

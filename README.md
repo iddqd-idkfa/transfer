@@ -6,6 +6,8 @@ Works in-memory, without any secondary in memory db such as H2.
 
 Simplistic single-file API.
 
+Locks accounts during transaction executions by using synchronized methods.
+
 Creates standalone jar `transfer-1.0-SNAPSHOT-with-all-dependencies.jar` when `maven package` is run,
 does not need any running servers or containers.
 

@@ -16,7 +16,7 @@ does not need any running servers or containers.
 For API:
 
 - Java 8
-- Eclispe Vert.x
+- Eclipse Vert.x
 - Maven
 
 For testing:

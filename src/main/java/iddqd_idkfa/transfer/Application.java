@@ -31,7 +31,7 @@ public class Application {
         Repository.addTransfer(tr2.getId(), tr2);
         Transfer tr3 = new Transfer(1, 0, new BigDecimal("100"), Currency.getInstance("EUR"), "Flat Earth Society Membership");
         Repository.addTransfer(tr3.getId(), tr3);
-        Transfer tr4 = new Transfer(0, 1, new BigDecimal("400"), Currency.getInstance("EUR"), "Chin implant");
+        Transfer tr4 = new Transfer(0, 1, new BigDecimal("400"), Currency.getInstance("USD"), "Chin implant");
         Repository.addTransfer(tr4.getId(), tr4);
     }
 
